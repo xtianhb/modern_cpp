@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"path": "basics"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"iostream": "cpp",
+			"climits": "cpp",
+			"cfloat": "cpp",
+			"ostream": "cpp"
+		}
+	}
+}
