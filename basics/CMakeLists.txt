@@ -6,7 +6,12 @@ include_directories("./")
 include(CTest)
 enable_testing()
 
-add_executable(basics main.cpp basic.cpp)
+add_executable(basic main.cpp basic.cpp assignments.cpp)
+
+if ( CMAKE_COMPILER_IS_GNUCC )
+    target_compile_options(basic  PRIVATE -Wall -Wextra -Wpedantic -Wno-unused-variable)
+
+endif()
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})

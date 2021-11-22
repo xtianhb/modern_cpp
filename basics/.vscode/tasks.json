@@ -2,14 +2,22 @@
 	"version": "2.0.0",
 	"tasks": [
 		{
-			"type": "cppbuild",
-			"label": "BUILD C/C++: g++ build active file",
+			"type": "shell",
+			"label": "BUILD C/C++!",
 			"command": "/usr/bin/g++",
 			"args": [
 				"-fdiagnostics-color=always",
 				"-g",
-				"${file}",
-				"-o"				
+				"${fileDirname}/*.cpp",
+				"-I",
+				"${fileDirname}",
+				"/Ob2",
+				"-o",
+				"basic",
+				"-Wall",
+				"-Wextra",
+				"-Wpedantic",
+				"-Wno-unused-variable"
 			],
 			"options": {
 				"cwd": "${fileDirname}"

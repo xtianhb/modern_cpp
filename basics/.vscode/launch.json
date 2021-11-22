@@ -6,12 +6,12 @@
     "configurations": [
     
         {
-            "name": "g++ - Build and debug",
+            "name": "DEBUG C/C++!",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${fileDirname}/${fileBasenameNoExtension}",
+            "program": "${fileDirname}/basic",
             "args": [],
-            "stopAtEntry": false,
+            "stopAtEntry": true,
             "cwd": "${fileDirname}",
             "environment": [],
             "externalConsole": false,
@@ -23,7 +23,7 @@
                     "ignoreFailures": true
                 }
             ],
-            "preLaunchTask": "BUILD C/C++: g++ build active file",
+            "preLaunchTask": "BUILD C/C++!",
             "miDebuggerPath": "/usr/bin/gdb"
         }
     ]
