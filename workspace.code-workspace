@@ -1,7 +1,13 @@
 {
 	"folders": [
 		{
+			"path": "."
+		},
+		{
 			"path": "basics"
+		},
+		{
+			"path": "memory"
 		}
 	],
 	"settings": {
