@@ -9,7 +9,7 @@
             "name": "DEBUG C/C++!",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${fileDirname}/basic",
+            "program": "${fileDirname}",
             "args": [],
             "stopAtEntry": true,
             "cwd": "${fileDirname}",

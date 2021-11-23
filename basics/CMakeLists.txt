@@ -12,6 +12,8 @@ if ( CMAKE_COMPILER_IS_GNUCC )
     target_compile_options(basics.bin PRIVATE -Wall -Wextra -Wpedantic -Wno-unused-variable)
 endif()
 
+target_include_directories(basics.bin PUBLIC ./)
+
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
 include(CPack)
