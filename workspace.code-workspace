@@ -20,6 +20,9 @@
 		},
 		{
 			"path": "memory2"
+		},
+		{
+			"path": "goodies"
 		}
 	],
 	"settings": {
