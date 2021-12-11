@@ -4,7 +4,7 @@ project(goodies VERSION 0.1.0)
 include(CTest)
 enable_testing()
 
-add_executable(goodies.bin main.cpp assigns.cpp goodies.cpp)
+add_executable(goodies.bin main.cpp assigns.cpp goodies.cpp union.cpp)
 
 target_include_directories(goodies.bin PUBLIC ./)
 

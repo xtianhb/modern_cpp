@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/xtian/courses/modern_cpp/ooo/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9   -I/home/xtian/courses/modern_cpp/ooo/.  -g   -Wno-unused-variable -Wall -o CMakeFiles/ooo.bin.dir/main.cpp.o -c /home/xtian/courses/modern_cpp/ooo/main.cpp",
+  "file": "/home/xtian/courses/modern_cpp/ooo/main.cpp"
+},
+{
+  "directory": "/home/xtian/courses/modern_cpp/ooo/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9   -I/home/xtian/courses/modern_cpp/ooo/.  -g   -Wno-unused-variable -Wall -o CMakeFiles/ooo.bin.dir/ooo.cpp.o -c /home/xtian/courses/modern_cpp/ooo/ooo.cpp",
+  "file": "/home/xtian/courses/modern_cpp/ooo/ooo.cpp"
+}
+]

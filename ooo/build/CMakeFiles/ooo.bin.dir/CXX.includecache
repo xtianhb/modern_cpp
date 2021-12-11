@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../ooo.hpp
+
+/home/xtian/courses/modern_cpp/ooo/main.cpp
+iostream
+-
+ooo.hpp
+-
+
+/home/xtian/courses/modern_cpp/ooo/ooo.cpp
+
