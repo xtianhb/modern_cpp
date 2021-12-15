@@ -47,6 +47,9 @@
 		{
 			"name": "file_io",
 			"path": "file_io"
+		},
+		{
+			"path": "templates"
 		}
 	],
 	"settings": {
@@ -97,7 +100,12 @@
 			"stdexcept": "cpp",
 			"streambuf": "cpp",
 			"typeinfo": "cpp",
-			"cstring": "cpp"
+			"cstring": "cpp",
+			"chrono": "cpp",
+			"codecvt": "cpp",
+			"ctime": "cpp",
+			"ratio": "cpp",
+			"iomanip": "cpp"
 		}
 	}
 }
