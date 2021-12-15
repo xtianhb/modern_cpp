@@ -1,37 +1,52 @@
 {
 	"folders": [
 		{
+			"name": "modern_cpp",
 			"path": "."
 		},
 		{
+			"name": "basics",
 			"path": "basics"
 		},
 		{
+			"name": "memory",
 			"path": "memory"
 		},
 		{
+			"name": "objs",
 			"path": "objs"
 		},
 		{
+			"name": "mvsemantics",
 			"path": "mvsemantics"
 		},
 		{
+			"name": "opover",
 			"path": "opover"
 		},
 		{
+			"name": "memory2",
 			"path": "memory2"
 		},
 		{
+			"name": "goodies",
 			"path": "goodies"
 		},
 		{
+			"name": "ooo",
 			"path": "ooo"
 		},
 		{
+			"name": "account",
 			"path": "account"
 		},
 		{
+			"name": "except",
 			"path": "except"
+		},
+		{
+			"name": "file_io",
+			"path": "file_io"
 		}
 	],
 	"settings": {
