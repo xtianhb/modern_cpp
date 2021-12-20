@@ -1,34 +1,125 @@
 #include <iostream>
 #include <string>
+#include <cstring>
 #include <templates.hpp>
 
-int temp1()
-{
-    std::cout << "Templates1>>" << std::endl;
+//int Max(int x, int y) {
+//	return x > y ? x : y;
+//}
+//float Max(float x, float y) {
+//	return x > y ? x : y;
+//}
 
-    return 0;
+//Primary Template
+template<typename T>
+T Max(T x, T y) {
+	std::cout << typeid(T).name() << std::endl;
+	return x > y ? x : y;
+}
+//Explicit Instantiation
+template char Max(char x, char y);
+
+//Explicit Specialization
+template<> const char * Max<const char*>(const char *x, const char *y) {
+	std::cout << "Max<const char*>()" << std::endl;
+	return strcmp(x, y) > 0 ? x : y;
 }
 
-int temp2()
-{
-    std::cout << "Templates2>>" << std::endl;
+void Examples() {
+#pragma region Instantiation Examples
+	Max(static_cast<float>(3), 5.5f);
 
-    return 0;
+	//Override compiler's deduction process
+	Max<double>(3, 6.2);
+
+	//Causes implicit instantiation of Max<int>
+	int(*pfn)(int, int) = Max;
+
+#pragma endregion
+#pragma region Explicit Instantiation
+	const char *b{ "B" };
+	const char *a{ "A" };
+	auto s = Max(a, b);
+	std::cout << s << std::endl;
+#pragma endregion
 }
 
-int temp3()
-{
-    std::cout << "Templates3>>" << std::endl;
-
-    return 0;
+//Non-type template parameter
+// Define a parameter for the function
+template<int size>
+void Print() {
+	char buffer[size];
+	std::cout << size << std::endl;
 }
+
+//Requires size as explicit argument
+template<typename T>
+T Sum(T*parr, int size){
+	T sum{};
+	for (int i = 0; i < size; ++i) {
+		sum += parr[i];
+	}
+	return sum;
+}
+//Size is implicitly calculated in non-type template argument
+template<typename T,int size>
+T Sum(T (&arr)[size]) {
+	T sum{};
+	for (int i = 0; i < size; ++i) {
+		sum += arr[i];
+	}
+	return sum;
+}
+
+int test_template() 
+{
+	Print<3>();
+	int arr[]{ 3,1,9,7 };
+	//int (&ref)[5] = arr ;
+	int sum = Sum(arr);
+	std::cout << sum << std::endl; 
+	return 0;
+}
+
+template<typename T>
+T Add(T x, T y)
+{
+    return x+y;
+}
+
+template<typename T>
+T AddArr(T * pArr, int Size)
+{
+	T Sum = (T)0;
+    for(int i=0; i<Size; i++)
+	{
+		Sum += pArr[i];
+	}
+	return Sum;
+}
+
+template<typename T>
+int MaxArr (T * pArr, int Size)
+{
+    T Min;
+	Min = pArr[0];
+	for(int i=0; i<Size; i++)
+	{
+		if (Min < pArr[i] )
+			Min = pArr[i];
+	}
+    return Min;
+}
+
 
 int templates(void)
 {
-    temp1();
-    temp2();
-    temp3();
 
+    test_template();
+
+    //temp1();
+    //temp2();
+    //temp3();
 
     return 0; 
 }
