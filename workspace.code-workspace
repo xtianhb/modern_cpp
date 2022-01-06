@@ -53,6 +53,9 @@
 		},
 		{
 			"path": "lambda"
+		},
+		{
+			"path": "concurrency"
 		}
 	],
 	"settings": {
@@ -108,7 +111,12 @@
 			"codecvt": "cpp",
 			"ctime": "cpp",
 			"ratio": "cpp",
-			"iomanip": "cpp"
+			"iomanip": "cpp",
+			"thread": "cpp",
+			"condition_variable": "cpp",
+			"list": "cpp",
+			"future": "cpp",
+			"mutex": "cpp"
 		}
 	}
 }
