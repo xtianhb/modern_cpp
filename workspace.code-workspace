@@ -59,6 +59,9 @@
 		},
 		{
 			"path": "cpp17"
+		},
+		{
+			"path": "classtemplates17"
 		}
 	],
 	"settings": {
