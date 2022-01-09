@@ -62,6 +62,9 @@
 		},
 		{
 			"path": "classtemplates17"
+		},
+		{
+			"path": "optional17"
 		}
 	],
 	"settings": {
@@ -122,7 +125,10 @@
 			"condition_variable": "cpp",
 			"list": "cpp",
 			"future": "cpp",
-			"mutex": "cpp"
+			"mutex": "cpp",
+			"any": "cpp",
+			"variant": "cpp",
+			"map": "cpp"
 		}
 	}
 }
